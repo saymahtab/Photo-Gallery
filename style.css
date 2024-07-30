@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    letter-spacing: 2px; 
+}
+
+.logo span {
+    color: #4caf50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #4caf50;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.burger i {
+    color: white;
+}
+
+.main-container {
+    padding-top: 80px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.column .img {
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.column .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.column .img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #ddd;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #4caf50;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    </style>
+    <script src="https://kit.fontawesome.com/9c06d5d87a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Photo<span>Gallery</span></h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#back">Background</a></li>
+                <li><a href="#ani">Animals</a></li>
+                <li><a href="#flower">Flower</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#house">House</a></li>
+                <li><a href="#ocean">Ocean</a></li>
+                <li><a href="#landscape">Landscape</a></li>
+                <li><a href="#cars">Cars</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="column">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/15/07/59/flowers-8763039_1280.jpg" alt="Flowers">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/15/02/11/green-leaves-7853561_1280.jpg" alt="Green Leaves">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/03/27/17/14/ai-generated-8659507_1280.jpg" alt="AI Generated">
+                </div>
+            </div>
+            <div class="column">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2014/12/07/09/30/milky-way-559641_1280.jpg" alt="Milky Way">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="Bird">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2015/11/16/16/28/bird-1045954_1280.jpg" alt="Bird">
+                </div>
+            </div>
+            <div class="column">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/27/00/13/heliconia-8599119_1280.jpg" alt="Heliconia">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_1280.jpg" alt="Road">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/09/19/36/zoo-8378189_1280.jpg" alt="Zoo">
+                </div>
+            </div>
+            <div class="column">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/12/14/24/night-3078326_1280.jpg" alt="Night Sky">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/03/20/06/18/ai-generated-8644732_1280.jpg" alt="AI Generated">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/11/06/47/tropical-8754092_1280.jpg" alt="Tropical">
+                </div>
+            </div>
+            <div class="column">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/13/08/18/blue-flower-6620619_1280.jpg" alt="Blue Flower">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/09/13/03/beach-8563083_1280.jpg" alt="Beach">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821_1280.jpg" alt="Road">
+                </div>
+            </div>
+            <div class="column">
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2023/09/22/07/02/red-8268266_1280.jpg" alt="Red">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/27/14/27/butterfly-7954767_1280.jpg" alt="Butterfly">
+                </div>
+                <div class="img">
+                    <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg" alt="Field">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/_mehtab__09/"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://m.facebook.com/saymahtab/"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://x.com/say_mahtab?t=L06bmuO5ii9FyuIClaTx7A&s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mohd-mahtab-0937122a0/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </section>
+    </footer>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
